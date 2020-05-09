@@ -512,8 +512,8 @@ int* send_edge(int procRank, int numProcs, BorderNode* border, int nbRows, int y
 }
 
 int select_new_vertex(int procRank, int numProcs, int* minEdges, Edge* smallest) {
-    int tableau = malloc(n * sizeof(int));
-    tableau = realloc(tableau, m * sizeof(int));
+    //int tableau = malloc(n * sizeof(int));
+    //tableau = realloc(tableau, m * sizeof(int));
     if (procRank != 0)
         return -1;
     int idSmallestVertex = -1;
